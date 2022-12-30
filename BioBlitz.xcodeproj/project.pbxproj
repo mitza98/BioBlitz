@@ -11,6 +11,8 @@
 		565B1652295EE43600C305FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B1651295EE43600C305FF /* ContentView.swift */; };
 		565B1654295EE43800C305FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565B1653295EE43800C305FF /* Assets.xcassets */; };
 		565B1657295EE43800C305FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565B1656295EE43800C305FF /* Preview Assets.xcassets */; };
+		565B165F295EE75E00C305FF /* Bacteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B165E295EE75E00C305FF /* Bacteria.swift */; };
+		565B1661295EE93D00C305FF /* BacteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B1660295EE93D00C305FF /* BacteriaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		565B1653295EE43800C305FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		565B1656295EE43800C305FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		565B1658295EE43800C305FF /* BioBlitz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BioBlitz.entitlements; sourceTree = "<group>"; };
+		565B165E295EE75E00C305FF /* Bacteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bacteria.swift; sourceTree = "<group>"; };
+		565B1660295EE93D00C305FF /* BacteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacteriaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				565B164F295EE43600C305FF /* BioBlitzApp.swift */,
+				565B165E295EE75E00C305FF /* Bacteria.swift */,
+				565B1660295EE93D00C305FF /* BacteriaView.swift */,
 				565B1651295EE43600C305FF /* ContentView.swift */,
 				565B1653295EE43800C305FF /* Assets.xcassets */,
 				565B1658295EE43800C305FF /* BioBlitz.entitlements */,
@@ -141,6 +147,8 @@
 			files = (
 				565B1652295EE43600C305FF /* ContentView.swift in Sources */,
 				565B1650295EE43600C305FF /* BioBlitzApp.swift in Sources */,
+				565B165F295EE75E00C305FF /* Bacteria.swift in Sources */,
+				565B1661295EE93D00C305FF /* BacteriaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
