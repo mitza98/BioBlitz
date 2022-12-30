@@ -13,15 +13,18 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
-                Text ("GREEN: 0")
-                
+                Text ("GREEN: \(board.greenScore)")
+                    .padding(.horizontal)
+                    .background(Capsule().fill(.green).opacity(board.currentPlayer == .green ? 1 : 0))
                 Spacer()
                 
                 Text("BIOBLITZ")
                 
                 Spacer()
                 
-                Text("RED: 0")
+                Text("RED: \(board.redScore)")
+                    .padding(.horizontal)
+                    .background(Capsule().fill(.green).opacity(board.currentPlayer == .red ? 1 : 0))
             }
             .font(.system(size: 36).weight(.black))
             
