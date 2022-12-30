@@ -37,11 +37,12 @@ struct BacteriaView: View {
                 .frame(width: 3, height: 8)
                 .offset(y: -20)
         }
+        .rotationEffect(.degrees(bacteria.direction.rotation))
     }
 }
 
 struct BacteriaView_Previews: PreviewProvider {
     static var previews: some View {
-        BacteriaView()
+        BacteriaView(bacteria: Bacteria(row: 0, col: 0))
     }
 }
