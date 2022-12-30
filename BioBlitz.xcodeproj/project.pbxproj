@@ -13,6 +13,7 @@
 		565B1657295EE43800C305FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565B1656295EE43800C305FF /* Preview Assets.xcassets */; };
 		565B165F295EE75E00C305FF /* Bacteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B165E295EE75E00C305FF /* Bacteria.swift */; };
 		565B1661295EE93D00C305FF /* BacteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B1660295EE93D00C305FF /* BacteriaView.swift */; };
+		565B1663295EEECF00C305FF /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B1662295EEECF00C305FF /* GameBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		565B1658295EE43800C305FF /* BioBlitz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BioBlitz.entitlements; sourceTree = "<group>"; };
 		565B165E295EE75E00C305FF /* Bacteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bacteria.swift; sourceTree = "<group>"; };
 		565B1660295EE93D00C305FF /* BacteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacteriaView.swift; sourceTree = "<group>"; };
+		565B1662295EEECF00C305FF /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		565B164E295EE43600C305FF /* BioBlitz */ = {
 			isa = PBXGroup;
 			children = (
+				565B1662295EEECF00C305FF /* GameBoard.swift */,
 				565B164F295EE43600C305FF /* BioBlitzApp.swift */,
 				565B165E295EE75E00C305FF /* Bacteria.swift */,
 				565B1660295EE93D00C305FF /* BacteriaView.swift */,
@@ -147,6 +150,7 @@
 			files = (
 				565B1652295EE43600C305FF /* ContentView.swift in Sources */,
 				565B1650295EE43600C305FF /* BioBlitzApp.swift in Sources */,
+				565B1663295EEECF00C305FF /* GameBoard.swift in Sources */,
 				565B165F295EE75E00C305FF /* Bacteria.swift in Sources */,
 				565B1661295EE93D00C305FF /* BacteriaView.swift in Sources */,
 			);

@@ -19,7 +19,7 @@ struct BacteriaView: View {
             return "chevron.up.circle.fill"
         default:
             return "chevron.up.circle"
-        
+        }
     }
     
     var body: some View {
@@ -41,8 +41,11 @@ struct BacteriaView: View {
     }
 }
 
+
 struct BacteriaView_Previews: PreviewProvider {
     static var previews: some View {
-        BacteriaView(bacteria: Bacteria(row: 0, col: 0))
+        BacteriaView(bacteria: Bacteria(row: 0, col: 0)) {
+            
+        }
     }
 }
