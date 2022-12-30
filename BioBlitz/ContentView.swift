@@ -24,21 +24,39 @@ struct ContentView: View {
                 
                 Text("RED: \(board.redScore)")
                     .padding(.horizontal)
-                    .background(Capsule().fill(.green).opacity(board.currentPlayer == .red ? 1 : 0))
+                    .background(Capsule().fill(.red).opacity(board.currentPlayer == .red ? 1 : 0))
             }
             .font(.system(size: 36).weight(.black))
-            
-            VStack {
-                ForEach(0..<11, id: \.self) { row in
-                    HStack {
-                        ForEach (0..<22, id: \.self) { col in
-                            let bacteria = board.grid[row][col]
-                            
-                            BacteriaView(bacteria: bacteria) {
-                                board.rotate(bacteria: bacteria)
+            ZStack {
+                VStack {
+                    ForEach(0..<11, id: \.self) { row in
+                        HStack {
+                            ForEach (0..<22, id: \.self) { col in
+                                let bacteria = board.grid[row][col]
+                                
+                                BacteriaView(bacteria: bacteria) {
+                                    board.rotate(bacteria: bacteria)
+                                }
                             }
                         }
                     }
+                }
+                if let winner = board.winner {
+                    VStack {
+                        Text ("\(winner) wins")
+                            .font(.largeTitle)
+                        Button(action: board.reset) {
+                            Text("Play again")
+                                .padding()
+                                .background(.blue)
+                                .clipShape(Capsule())
+                        }
+                        .buttonStyle(.plain)
+                    }
+                    .padding(40)
+                    .background(.black.opacity(0.85))
+                    .cornerRadius(25)
+                    .transition(.scale)
                 }
             }
         }
