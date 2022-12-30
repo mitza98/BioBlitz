@@ -63,4 +63,35 @@ class GameBoard: ObservableObject {
         guard col < grid[0].count else { return nil }
         return grid[row][col]
     }
+    
+    func infect(from: Bacteria) {
+        objectWillChange.send()
+        
+        var bacteriaToInfect = [Bacteria?]()
+        
+        switch from.direction {
+        case .north:
+            bacteriaToInfect.append(getBacteria(atRow: from.row - 1, col: from.col))
+        case .south:
+            bacteriaToInfect.append(getBacteria(atRow: from.row + 1, col: from.col))
+        case .east:
+            bacteriaToInfect.append(getBacteria(atRow: from.row, col: from.col + 1))
+        case .west:
+            bacteriaToInfect.append(getBacteria(atRow: from.row, col: from.col - 1))
+        }
+        
+        for case let bacteria? in bacteriaToInfect {
+            if bacteria.color != from.color {
+                bacteria.color = from.color
+                infect(from: bacteria)
+            }
+        }
+    }
+    
+    func rotate(bacteria: Bacteria) {
+        objectWillChange.send()
+        
+        bacteria.direction = bacteria.direction.next
+        infect(from: bacteria)
+    }
 }

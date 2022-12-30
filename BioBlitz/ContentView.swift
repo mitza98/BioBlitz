@@ -32,7 +32,7 @@ struct ContentView: View {
                             let bacteria = board.grid[row][col]
                             
                             BacteriaView(bacteria: bacteria) {
-                                
+                                board.rotate(bacteria: bacteria)
                             }
                         }
                     }

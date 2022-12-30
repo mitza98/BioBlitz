@@ -10,7 +10,7 @@ class Bacteria {
         var rotation: Double {
             switch self {
             case .north: return 0
-            case .south: return 190
+            case .south: return 180
             case .east: return 90
             case .west: return 270
             }
